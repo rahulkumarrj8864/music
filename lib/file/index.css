@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://user-images.githubusercontent.com/98095685/156160115-8ac887e5-f60e-444a-a66b-568bf572c68e.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: top 600px left 5px;
+}
+.home-page{
+    padding-top: 1px;
+    background-image: url("https://user-images.githubusercontent.com/98095685/156159902-85120c0d-2c8d-4fb0-ad86-540a0f6dc61c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-Home{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    margin-left: 15px;
+}
+.CDB{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin-top: -100px;
+    margin-left: 200px;
+    margin-bottom: -25px;
+    animation-name: Rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+.CDR{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin-left: 315px;
+    animation-name: Rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+.CDY{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: -170px;
+    margin-left: 360px;
+    animation-name: Rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: reverse;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+}
+header{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+header h2{
+    font-size: 30px;
+    margin-left: -500px;
+    animation-name: DropDown;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+header h1{
+    font-size: 100px;
+    margin: -15px 0;
+    margin-left: -500px;
+    color:rgb(255, 251, 0);
+    animation-name: DropDown1;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+header h4{
+    font-size: 30px;
+    color: sandybrown;
+    margin-left: -500px;
+    animation-name: DropDown;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes DropDown{
+    from{
+        margin-left: -500px;
+    }
+    to{
+        margin-left: -5px;
+    }
+
+}
+@keyframes DropDown1{
+    from{
+        margin-left: -500px;
+    }
+    to{
+        margin-left: -10px;
+    }
+}
+#form{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+input{
+    height: 50px;
+    width: 30%;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    background-color: black;
+}
+button{
+    border: none;
+    padding-top:  2px;
+    padding-left:  2px;
+    padding-right:  2px;
+    border-radius: 100px;
+    background-color: black;
+    cursor: pointer;
+}
+@keyframes Rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+button:hover{
+   transform: scale(1.3);
+}
+button img{
+    height: 50px;
+}
+button img:hover{
+    animation-name: Rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+#girl{
+    margin-bottom: -5px;
+    margin-top: -384px;
+    margin-left: 750px;
+    animation-name: movingGirl;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+@keyframes movingGirl{
+    from{
+        margin-left: 1400px;
+    }
+    to{
+        margin-left: 750px;
+    }
+}
+
+.btn {
+    background-image: linear-gradient(to bottom right, #64045b, #250535);
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 4px 10px;
+    transition: 0.7s;
+}
+.next-prev{
+    background-image: linear-gradient(to bottom right, #64045b, #250535);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px 20px;
+    transition: 0.3s;
+}
+
+.next-prev:hover{
+    transform: scale(1.5);
+}
+
+ul.songs {
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 20px;
+    transition: 5s;
+}
+  
+ul.songs li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+  
+.container {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 30px auto;
+    max-width: 100%;
+    width: 600px;
+    text-align: center;
+}
+  
+.container h2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10rem;
+    color: yellow;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+.container p {
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 10rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+  
+.centered {
+    display: flex;
+    justify-content: center;
+}
+  
+.centered button {
+    transform: scale(1.3);
+    margin: 15px;
+}
